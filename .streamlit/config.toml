@@ -1,0 +1,24 @@
+[theme]
+base            = "dark"
+primaryColor    = "#58a6ff"
+backgroundColor = "#0d1117"
+secondaryBackgroundColor = "#161b22"
+textColor       = "#e6edf3"
+font            = "sans serif"
+
+[server]
+# Streamlit Cloud sets PORT automatically — do NOT hard-code it here.
+headless        = true
+enableCORS      = false
+enableXsrfProtection = true
+maxUploadSize   = 50        # MB
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+# Avoids "missing ScriptRunContext" warnings in logs
+fastReruns = true
+
+[client]
+showErrorDetails = false     # hide tracebacks from end-users in production
